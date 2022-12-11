@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scripting - JavaScript</title>
+    <script src="js/js.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id="heading">Einfach Burger bestellen!</h1>
+    <div class="row">
+        <div class="col">
+            <form id="order" action="#" onsubmit="totalBestellung()">
+
+                <label for="name">Ihr Name</label>
+                <input placeholder="Vorname Nachname" name="name" id="name" minlength="5" maxlength="40">
+
+                <div id="burger-class" class="burger-class">
+                        <h2 id="burger-groesse">Größe Ihres Burgers!</h2>
+
+                    <button type="button" class="decrease-btn" onclick="decrease('kinderportion')">-</button>
+                    <input type="text" class="quantity" value="1" id="quantitykinderportion">
+                    <button type="button" class="increase-btn" onclick="increase('kinderportion')">+</button>
+                    <label><input name="kinderportion" type="checkbox" value="2.50"> 100gr Kinder Portion</label><br/>
+
+                    <button type="button" class="decrease-btn" onclick="decrease('klein')">-</button>
+                    <input type="text" class="quantity" value="1" id="quantityklein">
+                    <button type="button" class="increase-btn" onclick="increase('klein')">+</button>
+                    <label><input name="klein" type="checkbox" value="5"> 150gr Klein</label><br/>
+
+                    <button type="button" class="decrease-btn" onclick="decrease('mittel')">-</button>
+                    <input type="text" class="quantity" value="1" id="quantitymittel">
+                    <button type="button" class="increase-btn" onclick="increase('mittel')">+</button>
+                    <label><input name="mittel" type="checkbox" value="7.50" onclick="handleClick()"> 200gr Mittel</label><br/>
+
+                    <button type="button" class="decrease-btn" onclick="decrease('gross')" >-</button>
+                    <input type="text" class="quantity" value="1" id="quantitygross">
+                    <button type="button" class="increase-btn" onclick="increase('gross')">+</button>
+                    <label><input name="gross" type="checkbox" value="10" onclick="myFunction()"> 250gr Groß</label><br/>
+
+                </div>
+
+                <div class="geschenk" id="geschenk" style="display:none">
+                    <input type="radio" name="size" value="0" id="salat">
+                    <label for="salat">Salat</label><br/>
+                    <input type="radio" name="size" value="0" id="pommes">
+                    <label for="pommes">Pommes</label>
+                </div>
+
+                <div class="gaetrenke">
+                    <h2 id="extras">Extras</h2>
+                    <label for="pepsi"><input type="checkbox" id="pepsi" name="getraenk" value="2.50"> Pepsi</label><br/>
+                    <label for="coke-zero"><input type="checkbox" id="coke-zero" name="getraenk" value="2.50"> Cola Zero</label><br/>
+                    <label for="ayran"><input type="checkbox" id="ayran" name="getraenk" value="1.50"> Ayran</label><br/>
+                    <label for="almdudler"> <input type="checkbox" id="almdudler" name="getraenk" value="2.50"> Almdudler</label><br/>
+                </div>
+
+                <div class="pobutton">
+                    <button class="mt-1" type="submit" onclick="totalBestellung()">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <div class="col">
+            <p id="sayhello"></p>
+            <p id="subtotal"></p>
+            <p id="tax"></p>
+            <p id="totalincltax"></p>
+            <p id="totalTax"></p>
+        </div>
+
+</body>
+</html>

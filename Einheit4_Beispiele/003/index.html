@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scripting - JavaScript</title>
+    <script src="js/output-example.js"></script>
+</head>
+<body>
+    <h1>Los geht es mit Javascript</h1>
+
+
+    <h2>Variante 1: Befüllen eines HTML Tags:</h2>
+    <div id="output-area"></div>
+
+
+    <hr>
+
+    <!--h2>Variante 2: Document Write im Inline Script</h2>
+    <div id="variant-2">
+
+        <script>
+
+            document.write("Hello World! <br />");
+            document.write("Wie geht es dir heute?<br />");
+            document.write("Willkommen bei JavaScript!");
+
+        </script>
+
+    </div-->
+
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars" onchange="getComboA(this)">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <div id="bestellungen">
+
+    </div>
+</body>
+</html>

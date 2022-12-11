@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+    <script src="js/createchessboard.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div style="margin: 40px 0 40px 0">
+    <button id="chessboard-white"
+            style="display:inline;"
+            onclick="white();
+            document.getElementById('chessboard-black').style.display = 'none';
+            document.getElementById('message-whiteboard').innerHTML = 'This is a Chessboard in white';
+            this.disabled = true;"
+    >Chessboard in white</button>
+            <!--this.style.display = 'none';"-->
+
+    <button id="chessboard-black"
+            style="display:inline;"
+            onclick="black();
+            document.getElementById('chessboard-white').style.display = 'none';
+            document.getElementById('message-whiteboard').innerHTML = 'This is Chessboard in black';
+            this.disabled = true;"
+    >Chessboard in black</button>
+        <!--this.style.display = 'none';"-->
+
+    <div style="margin: 40px 0 40px 0">
+    <p id="message-whiteboard"></p>
+    <p id="message-blackboard"></p>
+    <div id="chessboard"></div>
+</body>
+</html>

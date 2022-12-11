@@ -1,0 +1,64 @@
+h1 {
+    color: #FF0000;
+}
+
+p {
+    font-size: 18px;
+    font-style: italic;
+
+    initial-letter: 0.2;
+    color: darkblue;
+}
+
+p.product-description {
+    font-style: normal;
+    color: darkred;
+}
+
+p#latest-product {
+    font-size: 32px;
+    border: 3px dashed blueviolet;
+    padding: 20px;
+}
+
+a#toTop {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: lightblue;
+    height: 35px;
+
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: unset;
+
+}
+
+a#toTop:hover {
+    box-shadow: 2px 2px 4px #000000;
+    border-bottom-left-radius: 0px;
+    transition: all 500ms ease;
+}
+
+a#toTop.move {
+
+    right: 20px;
+    transition: all 500ms ease;
+
+}
+
+div#two-cols-wrapper {
+    margin-top: 18px;
+}
+
+p.left, p.right {
+    width: 45%;
+    margin-top: 0px;
+}
+
+p.right {
+    float: right;
+}

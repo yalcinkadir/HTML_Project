@@ -1,0 +1,49 @@
+.getraenke {
+    margin-block: 10px;
+}
+
+.crust-type {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+div#burger-class {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+h2#burger-groesse {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.col {
+    margin-block: 10px;
+}
+
+.pobutton {
+    margin-block: 10px;
+}
