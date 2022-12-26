@@ -1,0 +1,69 @@
+class Order {
+  constructor() {
+    this.products = [];
+    this.totalPrice = 0;
+  }
+
+  addProduct(product) {
+    this.products.push(product);
+    this.totalPrice += product.price;
+  }
+
+  applyDiscount() {
+    if (this.totalPrice > 10) {
+      this.discountAmount = this.totalPrice * 0.15;
+      this.totalPrice -= this.discountAmount;
+    }
+  }
+
+  printReceipt() {
+    console.log("Products:");
+    for (const product of this.products) {
+      console.log(`- ${product.name}: €${product.price}`);
+    }
+    if (this.discountAmount) {
+      console.log(`Discount: €${this.discountAmount}`);
+    }
+    console.log(`Total price: €${this.totalPrice}`);
+  }
+}
+
+class Product {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+}
+
+const cheeseburger = new Product("Cheeseburger", 5);
+const fries = new Product("Fries", 3.50);
+const salad = new Product("Salad", 2);
+const drink = new Product("Drink", 3);
+
+const order = new Order();
+
+while (true) {
+  console.log("Please choose a product:");
+  console.log("1. Cheeseburger - €" + cheeseburger.price);
+  console.log("2. Fries - €" + fries.price);
+  console.log("3. Salad - €" + salad.price);
+  console.log("4. Drink - €" + drink.price);
+  console.log("5. Finish order");
+  const choice = prompt("Enter a number: ");
+  if (choice === "1") {
+    order.addProduct(cheeseburger);
+  } else if (choice === "2") {
+    order.addProduct(fries);
+  } else if (choice === "3") {
+    order.addProduct(salad);
+  } else if (choice === "4") {
+    order.addProduct(drink);
+  } else if (choice === "5") {
+    break;
+  } else {
+    console.log("Invalid input, please try again.");
+  }
+}
+
+order.applyDiscount();
+order.printReceipt();
