@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+    <script  src="js/home.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>MIMI Airline</title>
+</head>
+<body>
+    <h1 id="h1">Flights Today</h1>
+    <div id="col">
+        <div class="products">
+            
+            <div class="Flight1"> 
+                <label>
+                    <div>
+                    <h2>Flight1</h2>
+                    <p>Add New Pessenger to this Flight1</p>
+                  </div>
+                </label>
+
+                <label for="inputPName1">Name:</label>
+                <input type="text" id="inputPName1" name="inputPName1"><br><br>
+            
+                <label for="inputPAge1">Age:</label>
+                <input type="text" id="inputPAge1" name="inputPAge1"><br><br>
+            
+                <button onclick="managePassenger(flight1)">Add New Passenger</button>
+                <button onclick="flight1.printPassengerInfo()">Show Passengers</button>
+            
+                <div id="addNewPassenger"> </div>
+                <div id="showPassengers1"> </div>
+            </div>
+            
+            <div class="Flight2"> 
+                <label>
+                    <div>
+                    <h2>Flight2</h2>
+                    <p>Add New Pessenger to this Flight2</p>
+                  </div>
+                </label>
+                <label for="inputPName2">Name:</label>
+                <input type="text" id="inputPName2" name="inputPName2"><br><br>
+            
+                <label for="inputPAge">Age:</label>
+                <input type="text" id="inputPAge2" name="inputPAge2"><br><br>
+            
+                <button id="addButtonFlight2" onclick="managePassenger(flight2)">Add New Passenger to Flight2</button>
+                <button id="showButtonFlight2" onclick="flight2.printPassengerInfo()">Show Passengers in Flight2</button>
+            
+                <div id="addNewPassenger"> </div>
+                <div id="showPassengers2"> </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
