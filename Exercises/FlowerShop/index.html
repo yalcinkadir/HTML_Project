@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+    <script  src="js/home.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Flower Shop</title>
+</head>
+<body>
+    <h1 id="h1">Flower Shop</h1>
+    <div id="col">
+        <div class="products">
+            
+            <label>
+                <div class="product">
+                <h2>Gilly</h2>
+                <p>Gilly</p>
+                <div class="quantity-selector">
+                  <button class="minus-btn" onclick="ordered.removeProduct(gilly)">-</button>
+                  <input type="text" class="product-quantity" id="productGilly-quantity" value="0">
+                  <button class="plus-btn" onclick="ordered.addProduct(gilly)">+</button>
+                </div>
+              </div>
+            </label>
+
+            <label>
+                <div class="product">
+                <h2>Rose</h2>
+                <p>Rose</p>
+                <div class="quantity-selector">
+                  <button class="minus-btn" onclick="ordered.removeProduct(rose)">-</button>
+                  <input type="text" class="product-quantity" id="productRose-quantity" value="0">
+                  <button class="plus-btn" onclick="ordered.addProduct(rose)">+</button>
+                </div>
+              </div>
+            </label>
+
+            
+
+        </div>
+
+        <div class="otherProducts">
+            <h2 id="extras">Extras</h2>
+            <label for="accessories"><input type="checkbox" id="accessories" name="otherProducts" value="5" onclick="ordered.addOthersToBasket()"> Accessories</label><br/>
+            <label for="vase"><input type="checkbox" id="vase" name="vase" value="25" onclick="ordered.addOthersToBasket()"> Vase</label><br/>
+        </div>
+
+        <label>
+            <button class="showButton" type="submit" onclick="ordered.printOrder();">Show Receipt</button>
+            <div id="showReceipt" ></div>
+        </label>
+
+
+    </div>
+
+</body>
+</html>

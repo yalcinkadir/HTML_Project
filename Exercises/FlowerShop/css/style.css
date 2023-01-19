@@ -1,0 +1,20 @@
+div {
+    display: block;
+    margin-top: 30px;
+}
+
+.product-quantity {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  body {
+    display: block;
+    margin: 20px;
+}
+
+.showButton {
+    margin-top: 20px;
+}

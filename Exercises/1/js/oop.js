@@ -1,17 +1,20 @@
+class Mensch{
+    constructor(vorname, nachname){
+        this.vorname = vorname;
+        this.nachname = nachname;
 
-    let val;
+    }
 
-    let person = {
-        name: 'Kadir',
-        geburtsjahr: 1982
-    };
+    sagHallo(){
+        console.log('Hallo, mein Name ist ' + this.vorname);
+    }
 
-    val = person;
+    getVollername(){
+        return '${this.vorname} ${this.nachname}';
+    }
 
-    let numbers = [10,20,30];
-    val = numbers;
+}
 
-
-    console.log(typeof test);
-    console.log(person);
-    console.log("test");
+let mensch1 = new Mensch('Max', 'Mustermann');
+mensch1.sagHallo();
+mensch1.getVollername();

@@ -1,3 +1,6 @@
+/*
+// 2. Variante ohne OOP
+
 function Product(name, price) {
     this.name = name;
     this.price = price;
@@ -20,6 +23,12 @@ function Order() {
             this.products.push(product);
             this.totalPrice += product.price;
         }
+    }
+
+    this.removeProduct = function (product) {
+            this.products.remove(product);
+            this.totalPrice -= product.price;
+
     }
 
     this.isAllowedToAdd = function(product)
@@ -75,3 +84,4 @@ order.printReceipt();
 
 
 
+*/

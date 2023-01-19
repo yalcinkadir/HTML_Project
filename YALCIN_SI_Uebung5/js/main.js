@@ -1,6 +1,6 @@
 let cheeseBurger, pommes, salat, getraenk
 let ordered
-
+let personData
 require(['js/product'], function (product) {
 
     cheeseBurger = new Product("CheeseBurger", 5);
@@ -12,6 +12,11 @@ require(['js/product'], function (product) {
 
 require(['js/order'], function (order) {
     ordered = new Order();
+
+});
+
+require(['js/person'], function (person) {
+    personData = new Person();
 
 });
 
@@ -29,10 +34,3 @@ function addGetraenk(element) {
 //order.addProduct(getraenk)
 //order.applyDiscount();
 //order.printReceipt();
-
-
-
-
-
-
-

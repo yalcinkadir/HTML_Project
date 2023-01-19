@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+    <script  src="js/app.js"></script>
+    <script  src="css/main.css"></script>
+
+    <title>Schule</title>
+</head>
+<body>
+
+    <h1>Schüler</h1>
+    <button onclick="testObj.printInformation()">Print Students</button>
+    <button onclick="testObj.schulerList[0].addLehrer(testObj.lehrerList[0])">add Lehrer to Student</button>
+    <br><br>
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="alter">Alter:</label>
+    <input type="text" id="alter" name="alter"><br><br>
+
+    <label for="note">Note:</label>
+    <input type="text" id="note" name="note"><br><br>
+
+    <button onclick="testObj.createSchuler(document.getElementById('fname').value, document.getElementById('alter').value, document.getElementById('note').value)">Add Student</button>
+
+    <br><br>
+    <label for="lname">Name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="lerfahrung">Erfahrung:</label>
+    <input type="text" id="lerfahrung" name="lerfahrung"><br><br>
+
+    <button onclick="manageLehrer()">Add Lehrer</button>
+
+
+    <div id="print"> </div>
+    <div id="addLehrer"> </div>
+
+
+</body>
+</html>
