@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cdbc858-e9aa-4533-8648-30a79e63aafe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.hintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/HTML_Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/1/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/2/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/2/js/01-oop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/2/js/02-oop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/js/customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/js/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/js/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/FlowerShop/js/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/js/lehrer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/js/schueler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises/SchuleStudentLehrer/js/schule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5_Again/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises/1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises/1/js/oop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/1/js/oop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises/1/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/mainJS_v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/mainJS_v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/person.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/YALCIN_SI_Uebung5/js/product.js" afterDir="false" />
-    </list>
+    <list default="true" id="4cdbc858-e9aa-4533-8648-30a79e63aafe" name="Changes" comment="new Exercises" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,8 +216,16 @@
       <workItem from="1673643341746" duration="369000" />
       <workItem from="1673644411029" duration="21190000" />
       <workItem from="1673932867288" duration="2737000" />
-      <workItem from="1674039184905" duration="6520000" />
+      <workItem from="1674039184905" duration="6560000" />
     </task>
+    <task id="LOCAL-00001" summary="new Exercises">
+      <created>1674120551818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674120551818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,5 +241,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new Exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="new Exercises" />
   </component>
 </project>
