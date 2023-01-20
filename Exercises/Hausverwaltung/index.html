@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+    <script src="js/home.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Hausverwaltung</title>
+</head>
+
+<body>
+    <h1 id="h1">Hauverwaltung</h1>
+    <div id="col">
+
+        <div class="Person">
+
+            <label>
+                <div>
+                    <h2>New Person in Istanbul</h2>
+                    <p>Add New Person to Istanbul</p>
+                </div>
+            </label>
+
+            <label for="inputPNameIstanbul">Name:</label>
+            <input type="text" id="inputPNameIstanbul" name="inputPNameIstanbul"><br><br>
+
+            <label for="inputPIdIstanbul">Id:</label>
+            <input type="text" id="inputPIdIstanbul" name="inputPIdIstanbul"><br><br>
+
+            <button onclick="managePerson(istanbul)">Add Person</button>
+            <button onclick="istanbul.printPersonInfo()">Show Person</button>
+
+            <div id="showPersonIstanbul"></div>
+
+            <button 
+            onclick="istanbul.removePersonFromList(document.getElementById('inputPNameIstanbul').value,
+            document.getElementById('inputPIdIstanbul').value)"
+            >Remove Person</button>
+
+        </div>
+
+        <div class="personVienna">
+
+            <label>
+                <div>
+                    <h2>New Person in Vienna</h2>
+                    <p>Add New Person to Vienna</p>
+                </div>
+            </label>
+
+            <label for="inputPNameVienna">Name:</label>
+            <input type="text" id="inputPNameVienna" name="inputPNameVienna"><br><br>
+
+            <label for="inputPIdVienna">Id:</label>
+            <input type="text" id="inputPIdVienna" name="inputPIdVienna"><br><br>
+
+            <button onclick="managePerson(vienna)">Add Person</button>
+            <button onclick="vienna.printPersonInfo()">Show Person</button>
+
+            <div id="showPersonVienna"> </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

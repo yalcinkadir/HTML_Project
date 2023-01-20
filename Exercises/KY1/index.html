@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/bsp1.js"></script>
+    <link href="css/bsp1.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <title>FORMULAR</title>
+</head>
+
+<body>
+
+    <div id="form-bsp1-wrapper">
+        <form onsubmit="submitForm()">
+            <label for="firstname">Vorname:</label>
+            <input class="custom-input" type="text" id="firstname" name="firstname">
+            <label for="lastname">Nachname:</label>
+            <input type="text" id="lastname" name="lastname"><br>
+
+            <div class="group">
+                <label for="gender-female">Weiblich:</label>
+                <input type="radio" id="gender-female" name="sex" value="female">
+                <label for="gender-male">Männlich:</label>
+                <input type="radio" id="gender-male" name="sex" value="male">
+                <label for="gender-diverse">Divers:</label>
+                <input type="radio" id="gender-diverse" name="sex" value="diverse">
+                <label for="gender-none">keine Angabe:</label>
+                <input type="radio" id="gender-none" name="sex" value="none">
+            </div>
+
+            <label for="birth-date">Geburtsdatum:</label>
+            <input type="date" id="birth-date" name="birth-date"><br>
+
+            <label for="passport">Passnummer:</label>
+            <input type="text" id="passport" name="passport" maxlength="8"><br>
+
+            <label for="reason">Grund für Nachbestellung:</label>
+            <select id="reason" name="reason">
+                <option value="expired">Abgelaufen</option>
+                <option value="loss">Verlust</option>
+                <option value="birth">Geburt</option>
+                <option value="marriage">Heirat</option>
+            </select><br>
+
+            <input type="submit" id="submit-form" value="Formular Absenden">
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
